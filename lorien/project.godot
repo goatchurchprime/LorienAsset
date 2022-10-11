@@ -9,12 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Sprite",
+"base": "Reference",
 "class": "BaseCursor",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Cursor/BaseCursor.gd"
 }, {
-"base": "BaseCursor",
+"base": "Reference",
 "class": "BrushCursor",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Cursor/BrushCursor/BrushCursor.gd"
@@ -29,17 +29,17 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeOptimizer.gd"
 }, {
-"base": "CanvasTool",
+"base": "Reference",
 "class": "BrushTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/BrushTool.gd"
 }, {
-"base": "Node",
+"base": "Reference",
 "class": "CanvasTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/CanvasTool.gd"
 }, {
-"base": "CanvasTool",
+"base": "Reference",
 "class": "CircleTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/CircleTool.gd"
@@ -52,7 +52,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "Config",
 "language": "GDScript",
-"path": "res://Config.gd"
+"path": "res://addons/LorienInfiniteCanvas/Config.gd"
 }, {
 "base": "Reference",
 "class": "DSLParser",
@@ -69,7 +69,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://UI/Dialogs/EditPaletteDialog.gd"
 }, {
-"base": "CanvasTool",
+"base": "Reference",
 "class": "EraserTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/EraserTool.gd"
@@ -84,12 +84,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/InfiniteCanvas.gd"
 }, {
-"base": "Node2D",
+"base": "Reference",
 "class": "InfiniteCanvasGrid",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/InfiniteCanvasGrid.gd"
 }, {
-"base": "CanvasTool",
+"base": "Reference",
 "class": "LineTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/LineTool.gd"
@@ -134,12 +134,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://UI/Components/ProjectTab.gd"
 }, {
-"base": "CanvasTool",
+"base": "Reference",
 "class": "RectangleTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/RectangleTool.gd"
 }, {
-"base": "BaseCursor",
+"base": "Reference",
 "class": "SelectionCursor",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Cursor/SelectionCursor/SelectionCursor.gd"
@@ -185,12 +185,12 @@ _global_script_classes=[ {
 "path": "res://Misc/Types.gd"
 } ]
 _global_script_class_icons={
-"BaseCursor": "res://Assets/Icons/cursor_icon.png",
+"BaseCursor": "",
 "BrushCursor": "",
 "BrushStroke": "",
 "BrushStrokeOptimizer": "",
 "BrushTool": "",
-"CanvasTool": "res://Assets/Icons/tools.png",
+"CanvasTool": "",
 "CircleTool": "",
 "ColorPalettePicker": "",
 "Config": "",
