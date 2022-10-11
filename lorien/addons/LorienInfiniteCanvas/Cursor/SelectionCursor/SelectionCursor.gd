@@ -3,8 +3,8 @@ extends BaseCursor
 
 # -------------------------------------------------------------------------------------------------
 const CROSS_LENGTH: float = 10.0
-const MOVE_TEXTURE = preload("res://Assets/Cursors/move_cursor.png")
-const SELECT_TEXTURE = preload("res://Assets/Textures/selection_cursor.png")
+const MOVE_TEXTURE = preload("res://addons/LorienInfiniteCanvas/Assets/Cursors/move_cursor.png")
+const SELECT_TEXTURE = preload("res://addons/LorienInfiniteCanvas/Assets/Textures/selection_cursor.png")
 
 enum Mode {
 	MOVE,

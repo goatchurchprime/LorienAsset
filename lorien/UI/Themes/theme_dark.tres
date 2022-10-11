@@ -1,14 +1,14 @@
 [gd_resource type="Theme" load_steps=38 format=2]
 
-[ext_resource path="res://Assets/Fonts/font_big_bold.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Assets/Fonts/font_normal.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Assets/Textures/slider_knob_white.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Icons/close.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Textures/switch_off.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Textures/switch_on.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Textures/scrollbar_hl.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Textures/scrollbar.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Textures/scrollbar_bg.png" type="Texture" id=9]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/switch_off.png" type="Texture" id=1]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/switch_on.png" type="Texture" id=2]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Fonts/font_big_bold.tres" type="DynamicFont" id=3]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/scrollbar_hl.png" type="Texture" id=4]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Fonts/font_normal.tres" type="DynamicFont" id=5]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Icons/close.png" type="Texture" id=6]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/scrollbar_bg.png" type="Texture" id=7]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/scrollbar.png" type="Texture" id=8]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Textures/slider_knob_white.png" type="Texture" id=9]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 6.0
@@ -58,7 +58,7 @@ expand_margin_left = 2.0
 expand_margin_right = 2.0
 
 [sub_resource type="StyleBoxTexture" id=28]
-texture = ExtResource( 7 )
+texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 12, 12 )
 margin_left = 6.0
 margin_right = 6.0
@@ -66,7 +66,7 @@ expand_margin_left = 2.0
 expand_margin_right = 2.0
 
 [sub_resource type="StyleBoxTexture" id=29]
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 12, 12 )
 margin_left = 4.0
 margin_right = 4.0
@@ -220,13 +220,13 @@ shadow_color = Color( 0, 0, 0, 0.156863 )
 shadow_size = 2
 
 [resource]
-default_font = ExtResource( 2 )
+default_font = ExtResource( 5 )
 Button/colors/font_color = Color( 1, 1, 1, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
 Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 Button/constants/hseparation = 2
-Button/fonts/font = ExtResource( 2 )
+Button/fonts/font = ExtResource( 5 )
 Button/styles/disabled = SubResource( 1 )
 Button/styles/focus = SubResource( 2 )
 Button/styles/hover = SubResource( 2 )
@@ -239,11 +239,11 @@ CheckButton/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
 CheckButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 CheckButton/constants/check_vadjust = 0
 CheckButton/constants/hseparation = 4
-CheckButton/fonts/font = ExtResource( 2 )
-CheckButton/icons/off = ExtResource( 5 )
-CheckButton/icons/off_disabled = ExtResource( 5 )
-CheckButton/icons/on = ExtResource( 6 )
-CheckButton/icons/on_disabled = ExtResource( 6 )
+CheckButton/fonts/font = ExtResource( 5 )
+CheckButton/icons/off = ExtResource( 1 )
+CheckButton/icons/off_disabled = ExtResource( 1 )
+CheckButton/icons/on = ExtResource( 2 )
+CheckButton/icons/on_disabled = ExtResource( 2 )
 CheckButton/styles/disabled = null
 CheckButton/styles/focus = null
 CheckButton/styles/hover = null
@@ -266,7 +266,7 @@ ColorPickerButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.3 )
 ColorPickerButton/colors/font_color_hover = Color( 1, 1, 1, 1 )
 ColorPickerButton/colors/font_color_pressed = Color( 0.8, 0.8, 0.8, 1 )
 ColorPickerButton/constants/hseparation = 2
-ColorPickerButton/fonts/font = ExtResource( 2 )
+ColorPickerButton/fonts/font = ExtResource( 5 )
 ColorPickerButton/icons/bg = null
 ColorPickerButton/styles/disabled = SubResource( 4 )
 ColorPickerButton/styles/focus = SubResource( 4 )
@@ -279,10 +279,10 @@ HScrollBar/styles/grabber_pressed = SubResource( 28 )
 HScrollBar/styles/scroll = SubResource( 29 )
 HSeparator/constants/separation = 4
 HSeparator/styles/separator = SubResource( 5 )
-HSlider/icons/grabber = ExtResource( 3 )
-HSlider/icons/grabber_disabled = ExtResource( 3 )
-HSlider/icons/grabber_highlight = ExtResource( 3 )
-HSlider/icons/tick = ExtResource( 3 )
+HSlider/icons/grabber = ExtResource( 9 )
+HSlider/icons/grabber_disabled = ExtResource( 9 )
+HSlider/icons/grabber_highlight = ExtResource( 9 )
+HSlider/icons/tick = ExtResource( 9 )
 HSlider/styles/grabber_area = SubResource( 6 )
 HSlider/styles/grabber_area_highlight = SubResource( 6 )
 HSlider/styles/slider = SubResource( 7 )
@@ -293,7 +293,7 @@ ItemList/constants/hseparation = 4
 ItemList/constants/icon_margin = 4
 ItemList/constants/line_separation = 2
 ItemList/constants/vseparation = 2
-ItemList/fonts/font = ExtResource( 2 )
+ItemList/fonts/font = ExtResource( 5 )
 ItemList/styles/bg = SubResource( 8 )
 ItemList/styles/bg_focus = null
 ItemList/styles/cursor = null
@@ -307,7 +307,7 @@ Label/constants/line_spacing = 3
 Label/constants/shadow_as_outline = 0
 Label/constants/shadow_offset_x = 1
 Label/constants/shadow_offset_y = 1
-Label/fonts/font = ExtResource( 2 )
+Label/fonts/font = ExtResource( 5 )
 Label/styles/normal = SubResource( 9 )
 LineEdit/colors/clear_button_color = Color( 0.88, 0.88, 0.88, 1 )
 LineEdit/colors/clear_button_color_pressed = Color( 1, 1, 1, 1 )
@@ -317,7 +317,7 @@ LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
 LineEdit/colors/font_color_uneditable = Color( 0.88, 0.88, 0.88, 0.5 )
 LineEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
 LineEdit/constants/minimum_spaces = 12
-LineEdit/fonts/font = ExtResource( 2 )
+LineEdit/fonts/font = ExtResource( 5 )
 LineEdit/icons/clear = null
 LineEdit/styles/focus = SubResource( 10 )
 LineEdit/styles/normal = SubResource( 11 )
@@ -331,7 +331,7 @@ PopupMenu/colors/font_color_hover = Color( 0.88, 0.88, 0.88, 1 )
 PopupMenu/colors/font_color_separator = Color( 0.88, 0.88, 0.88, 1 )
 PopupMenu/constants/hseparation = 4
 PopupMenu/constants/vseparation = 4
-PopupMenu/fonts/font = ExtResource( 2 )
+PopupMenu/fonts/font = ExtResource( 5 )
 PopupMenu/icons/checked = null
 PopupMenu/icons/radio_checked = null
 PopupMenu/icons/radio_unchecked = null
@@ -352,7 +352,7 @@ TabContainer/constants/label_valign_bg = 2
 TabContainer/constants/label_valign_fg = 0
 TabContainer/constants/side_margin = 8
 TabContainer/constants/top_margin = 24
-TabContainer/fonts/font = ExtResource( 2 )
+TabContainer/fonts/font = ExtResource( 5 )
 TabContainer/icons/decrement = null
 TabContainer/icons/decrement_highlight = null
 TabContainer/icons/increment = null
@@ -379,8 +379,8 @@ Tree/constants/item_margin = 12
 Tree/constants/scroll_border = 4
 Tree/constants/scroll_speed = 12
 Tree/constants/vseparation = 4
-Tree/fonts/font = ExtResource( 2 )
-Tree/fonts/title_button_font = ExtResource( 2 )
+Tree/fonts/font = ExtResource( 5 )
+Tree/fonts/title_button_font = ExtResource( 5 )
 Tree/icons/arrow = null
 Tree/icons/arrow_collapsed = null
 Tree/icons/checked = null
@@ -405,7 +405,7 @@ WindowDialog/constants/close_h_ofs = 18
 WindowDialog/constants/close_v_ofs = 18
 WindowDialog/constants/scaleborder_size = 4
 WindowDialog/constants/title_height = 20
-WindowDialog/fonts/title_font = ExtResource( 1 )
-WindowDialog/icons/close = ExtResource( 4 )
-WindowDialog/icons/close_highlight = ExtResource( 4 )
+WindowDialog/fonts/title_font = ExtResource( 3 )
+WindowDialog/icons/close = ExtResource( 6 )
+WindowDialog/icons/close_highlight = ExtResource( 6 )
 WindowDialog/styles/panel = SubResource( 23 )

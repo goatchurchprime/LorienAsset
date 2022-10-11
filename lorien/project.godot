@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "Sprite",
 "class": "BaseCursor",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Cursor/BaseCursor.gd"
@@ -34,7 +34,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/BrushTool.gd"
 }, {
-"base": "Reference",
+"base": "Node",
 "class": "CanvasTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/CanvasTool.gd"
@@ -57,7 +57,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "DSLParser",
 "language": "GDScript",
-"path": "res://Misc/DSLParser.gd"
+"path": "res://addons/LorienInfiniteCanvas/Misc/DSLParser.gd"
 }, {
 "base": "WindowDialog",
 "class": "DeletePaletteDialog",
@@ -77,7 +77,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "I18nParser",
 "language": "GDScript",
-"path": "res://Misc/I18nParser.gd"
+"path": "res://addons/LorienInfiniteCanvas/Misc/I18nParser.gd"
 }, {
 "base": "ViewportContainer",
 "class": "InfiniteCanvas",
@@ -139,7 +139,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/RectangleTool.gd"
 }, {
-"base": "Reference",
+"base": "BaseCursor",
 "class": "SelectionCursor",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Cursor/SelectionCursor/SelectionCursor.gd"
@@ -167,12 +167,12 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "StringTemplating",
 "language": "GDScript",
-"path": "res://Misc/StringTemplating.gd"
+"path": "res://addons/LorienInfiniteCanvas/Misc/StringTemplating.gd"
 }, {
 "base": "Reference",
 "class": "SvgExporter",
 "language": "GDScript",
-"path": "res://Misc/SvgExporter.gd"
+"path": "res://addons/LorienInfiniteCanvas/Misc/SvgExporter.gd"
 }, {
 "base": "ScrollContainer",
 "class": "Toolbar",
@@ -182,15 +182,15 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Types",
 "language": "GDScript",
-"path": "res://Misc/Types.gd"
+"path": "res://addons/LorienInfiniteCanvas/Misc/Types.gd"
 } ]
 _global_script_class_icons={
-"BaseCursor": "",
+"BaseCursor": "res://addons/LorienInfiniteCanvas/Assets/Icons/cursor_icon.png",
 "BrushCursor": "",
 "BrushStroke": "",
 "BrushStrokeOptimizer": "",
 "BrushTool": "",
-"CanvasTool": "",
+"CanvasTool": "res://addons/LorienInfiniteCanvas/Assets/Icons/tools.png",
 "CircleTool": "",
 "ColorPalettePicker": "",
 "Config": "",
@@ -227,23 +227,23 @@ _global_script_class_icons={
 config/name="Lorien"
 run/main_scene="res://Main.tscn"
 run/low_processor_mode=true
-boot_splash/image="res://Assets/Textures/boot.png"
+boot_splash/image="res://addons/LorienInfiniteCanvas/Assets/Textures/boot.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
 boot_splash/bg_color=Color( 0.12549, 0.129412, 0.141176, 1 )
-config/icon="res://Assets/icon.png"
+config/icon="res://addons/LorienInfiniteCanvas/Assets/icon.png"
 
 [autoload]
 
 BrushStrokeTexture="*res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeTexture.gd"
-Utils="*res://Misc/Utils.gd"
+Utils="*res://addons/LorienInfiniteCanvas/Misc/Utils.gd"
 ProjectManager="*res://addons/LorienInfiniteCanvas/ProjectManager/ProjectManager.gd"
-Settings="*res://Misc/Settings.gd"
+Settings="*res://addons/LorienInfiniteCanvas/Misc/Settings.gd"
 ProjectMetadata="*res://addons/LorienInfiniteCanvas/ProjectManager/ProjectMetadata.gd"
 PaletteManager="*res://Palette/PaletteManager.gd"
-StatePersistence="*res://Misc/StatePersistence.gd"
+StatePersistence="*res://addons/LorienInfiniteCanvas/Misc/StatePersistence.gd"
 AlertDialog="*res://UI/Dialogs/AlertDialog.tscn"
-GlobalSignals="*res://Misc/GlobalSignals.gd"
+GlobalSignals="*res://addons/LorienInfiniteCanvas/Misc/GlobalSignals.gd"
 
 [debug]
 

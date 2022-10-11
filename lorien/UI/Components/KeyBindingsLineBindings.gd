@@ -5,7 +5,7 @@ signal modified_binding(bindings_data)
 
 # -------------------------------------------------------------------------------------------------
 var _bindings_data := {}
-var _preloaded_image := preload("res://Assets/Icons/delete.png")
+var _preloaded_image := preload("res://addons/LorienInfiniteCanvas/Assets/Icons/delete.png")
 
 # -------------------------------------------------------------------------------------------------
 # Keybindings data: {"action": "str", "readable_name": "str", "events": [...]}

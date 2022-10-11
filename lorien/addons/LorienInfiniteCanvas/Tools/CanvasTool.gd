@@ -1,4 +1,4 @@
-class_name CanvasTool, "res://Assets/Icons/tools.png"
+class_name CanvasTool, "res://addons/LorienInfiniteCanvas/Assets/Icons/tools.png"
 extends Node
 
 # -------------------------------------------------------------------------------------------------

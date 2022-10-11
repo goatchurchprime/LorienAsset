@@ -2,10 +2,10 @@
 
 [ext_resource path="res://UI/Themes/theme_dark.tres" type="Theme" id=1]
 [ext_resource path="res://UI/ColorPalettePicker.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Icons/edit.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Icons/plus.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Icons/copy.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Icons/delete.png" type="Texture" id=6]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Icons/edit.png" type="Texture" id=3]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Icons/plus.png" type="Texture" id=4]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Icons/copy.png" type="Texture" id=5]
+[ext_resource path="res://addons/LorienInfiniteCanvas/Assets/Icons/delete.png" type="Texture" id=6]
 [ext_resource path="res://UI/Components/FlatTextureButton.gd" type="Script" id=7]
 
 [sub_resource type="StyleBoxLine" id=1]
