@@ -5,7 +5,7 @@ class_name Serializer
 # TODO: !IMPORTANT! all of this needs validation
 
 # -------------------------------------------------------------------------------------------------
-const BRUSH_STROKE = preload("res://BrushStroke/BrushStroke.tscn")
+const BRUSH_STROKE = preload("res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.tscn")
 const COMPRESSION_METHOD = File.COMPRESSION_DEFLATE
 const POINT_ELEM_SIZE := 3
 

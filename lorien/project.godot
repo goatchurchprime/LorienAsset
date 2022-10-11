@@ -22,12 +22,12 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "BrushStroke",
 "language": "GDScript",
-"path": "res://BrushStroke/BrushStroke.gd"
+"path": "res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.gd"
 }, {
 "base": "Reference",
 "class": "BrushStrokeOptimizer",
 "language": "GDScript",
-"path": "res://BrushStroke/BrushStrokeOptimizer.gd"
+"path": "res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeOptimizer.gd"
 }, {
 "base": "Reference",
 "class": "BrushTool",
@@ -122,7 +122,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Misc/Player/Player.gd"
+"path": "res://addons/LorienInfiniteCanvas/Player/Player.gd"
 }, {
 "base": "Reference",
 "class": "Project",
@@ -149,7 +149,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/SelectionRectangle.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "SelectionTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/SelectionTool.gd"
@@ -235,7 +235,7 @@ config/icon="res://Assets/icon.png"
 
 [autoload]
 
-BrushStrokeTexture="*res://BrushStroke/BrushStrokeTexture.gd"
+BrushStrokeTexture="*res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeTexture.gd"
 Utils="*res://Misc/Utils.gd"
 ProjectManager="*res://ProjectManager/ProjectManager.gd"
 Settings="*res://Misc/Settings.gd"

@@ -2,8 +2,8 @@ extends ViewportContainer
 class_name InfiniteCanvas
 
 # -------------------------------------------------------------------------------------------------
-const BRUSH_STROKE = preload("res://BrushStroke/BrushStroke.tscn")
-const PLAYER = preload("res://Misc/Player/Player.tscn")
+const BRUSH_STROKE = preload("res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.tscn")
+const PLAYER = preload("res://addons/LorienInfiniteCanvas/Player/Player.tscn")
 
 # -------------------------------------------------------------------------------------------------
 onready var _brush_tool: BrushTool = $BrushTool

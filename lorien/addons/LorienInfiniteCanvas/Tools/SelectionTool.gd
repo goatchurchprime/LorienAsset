@@ -2,7 +2,7 @@ class_name SelectionTool
 extends CanvasTool
 
 # -------------------------------------------------------------------------------------------------
-const BRUSH_STROKE = preload("res://BrushStroke/BrushStroke.tscn")
+const BRUSH_STROKE = preload("res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.tscn")
 
 const MAX_FLOAT := 2147483646.0
 const MIN_FLOAT := -2147483646.0
