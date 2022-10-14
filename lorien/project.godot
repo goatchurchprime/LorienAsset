@@ -29,7 +29,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeOptimizer.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "BrushTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/BrushTool.gd"
