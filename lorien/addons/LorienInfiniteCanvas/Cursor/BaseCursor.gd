@@ -14,7 +14,9 @@ func _ready() -> void:
 # -------------------------------------------------------------------------------------------------
 func _input(event):
 	if event is InputEventMouseMotion:
-		_update_position()
+		#_update_position()
+		#global_position = event.position
+		global_position = _camera.xform(event.position * 1.0) #_canvas.get_canvas_scale())
 
 # -------------------------------------------------------------------------------------------------
 func _update_position():
