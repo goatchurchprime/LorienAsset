@@ -7,6 +7,8 @@ const UUID_DEFAULT_PALETTE := "defaultpalette"
 const KEY_NAME := "name"
 const KEY_COLORS := "colors"
 
+onready var Settings = LorAL.Settings
+
 # -------------------------------------------------------------------------------------------------
 class PaletteSorter:
 	static func sort_descending(a: Palette, b: Palette) -> bool:
@@ -42,7 +44,7 @@ func create_custom_palette(palette_name: String) -> Palette:
 	var palette := Palette.new()
 	palette.name = palette_name
 	palette.builtin = false
-	palette.uuid = Utils.generate_uuid(UUID_LENGTH)
+	palette.uuid = LorAL.Utils.generate_uuid(UUID_LENGTH)
 	palette.colors = PoolColorArray([Color.white, Color.black])
 	palettes.append(palette)
 	_sort()

@@ -69,7 +69,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://UI/Dialogs/EditPaletteDialog.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "EraserTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/EraserTool.gd"
@@ -235,11 +235,7 @@ config/icon="res://addons/LorienInfiniteCanvas/Assets/icon.png"
 
 [autoload]
 
-BrushStrokeTexture="*res://addons/LorienInfiniteCanvas/BrushStroke/BrushStrokeTexture.gd"
-Utils="*res://addons/LorienInfiniteCanvas/Misc/Utils.gd"
-ProjectManager="*res://addons/LorienInfiniteCanvas/ProjectManager/ProjectManager.gd"
-Settings="*res://addons/LorienInfiniteCanvas/Misc/Settings.gd"
-ProjectMetadata="*res://addons/LorienInfiniteCanvas/ProjectManager/ProjectMetadata.gd"
+LorAL="*res://addons/LorienInfiniteCanvas/LorAL.tscn"
 PaletteManager="*res://Palette/PaletteManager.gd"
 StatePersistence="*res://addons/LorienInfiniteCanvas/Misc/StatePersistence.gd"
 AlertDialog="*res://UI/Dialogs/AlertDialog.tscn"

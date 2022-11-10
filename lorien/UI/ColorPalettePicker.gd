@@ -1,6 +1,8 @@
 class_name ColorPalettePicker
 extends PanelContainer
 
+onready var Utils = LorAL.Utils
+
 # -------------------------------------------------------------------------------------------------
 const PALETTE_BUTTON = preload("res://UI/Components/PaletteButton.tscn")
 
@@ -34,7 +36,7 @@ func _input(event: InputEvent) -> void:
 	if !visible:
 		return
 	elif event is InputEventMouseButton && event.pressed:
-		var should_hide := !Utils.is_mouse_in_control(self)
+		var should_hide : bool = !Utils.is_mouse_in_control(self)
 		should_hide = should_hide && !Utils.is_mouse_in_control(_toolbar.get_brush_color_button())
 		should_hide = should_hide && !get_parent().is_dialog_open()
 		should_hide = should_hide && !_palette_selection_button.get_popup().visible

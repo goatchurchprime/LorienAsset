@@ -1,5 +1,7 @@
 extends Camera2D
 
+onready var Utils = LorAL.Utils
+
 signal zoom_changed(value)
 signal position_changed(value)
 

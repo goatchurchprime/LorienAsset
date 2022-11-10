@@ -56,7 +56,7 @@ func _remove_stroke(brush_position: Vector2) -> void:
 		
 # ------------------------------------------------------------------------------------------------
 func _add_undoredo_action_for_erased_strokes() -> void:
-	var project: Project = ProjectManager.get_active_project()
+	var project: Project = LorAL.ProjectManager.get_active_project()
 	if _removed_strokes.size():
 		project.undo_redo.create_action("Erase Stroke")
 		for stroke in _removed_strokes:
@@ -69,7 +69,7 @@ func _add_undoredo_action_for_erased_strokes() -> void:
 # ------------------------------------------------------------------------------------------------
 func _update_bounding_boxes() -> void:
 	var strokes: Array = _canvas.get_all_strokes()
-	_bounding_box_cache = Utils.calculte_bounding_boxes(strokes, BOUNDING_BOX_MARGIN)
+	_bounding_box_cache = LorAL.Utils.calculte_bounding_boxes(strokes, BOUNDING_BOX_MARGIN)
 	#$"../Viewport/DebugDraw".set_bounding_boxes(_bounding_box_cache.values())
 
 # ------------------------------------------------------------------------------------------------

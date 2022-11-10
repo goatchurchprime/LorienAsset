@@ -1,6 +1,8 @@
 extends PopupMenu
 class_name MainMenu
 
+onready var Utils = LorAL.Utils
+
 # -------------------------------------------------------------------------------------------------
 signal open_about_dialog
 signal open_settings_dialog

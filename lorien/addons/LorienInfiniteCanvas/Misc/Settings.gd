@@ -1,5 +1,7 @@
 extends Node
 
+onready var Utils = get_node("../Utils")
+
 # -------------------------------------------------------------------------------------------------
 const DEFAULT_SECTION 					:= "settings"
 const SHORTCUTS_SECTION 				:= "shortcuts"

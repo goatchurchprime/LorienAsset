@@ -1,5 +1,8 @@
 extends Node
 
+onready var Settings = get_node("../Settings")
+onready var ProjectManager = get_node("../ProjectManager")
+
 # -------------------------------------------------------------------------------------------------
 var _open_projects: Array # Array<Project>
 var _active_project: Project
@@ -48,7 +51,7 @@ func add_project(filepath: String = "") -> Project:
 	var canvas_color: Color = Settings.get_value(Settings.GENERAL_DEFAULT_CANVAS_COLOR, Config.DEFAULT_CANVAS_COLOR)
 	
 	var project := Project.new()
-	project.meta_data[ProjectMetadata.CANVAS_COLOR] = canvas_color.to_html(false)
+	project.meta_data[LorAL.ProjectMetadata.CANVAS_COLOR] = canvas_color.to_html(false)
 	project.id = _open_projects.size()
 	project.filepath = filepath
 	project.loaded = project.filepath.empty() # empty/unsaved/new projects are loaded by definition

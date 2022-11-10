@@ -1,5 +1,10 @@
 extends Control
 
+onready var Settings = LorAL.Settings
+onready var Utils = LorAL.Utils
+onready var ProjectManager = LorAL.ProjectManager
+onready var ProjectMetadata = LorAL.ProjectMetadata
+
 # -------------------------------------------------------------------------------------------------
 onready var _canvas: InfiniteCanvas = $InfiniteCanvas
 onready var _statusbar: Statusbar = $Statusbar
@@ -179,7 +184,7 @@ func _save_state() -> void:
 	StatePersistence.set_value(StatePersistence.OPEN_PROJECTS, open_projects)
 	
 	# Active project
-	var active_project_path := ProjectManager.get_active_project().filepath
+	var active_project_path : Project = ProjectManager.get_active_project().filepath
 	StatePersistence.set_value(StatePersistence.ACTIVE_PROJECT, active_project_path)
 	
 	# Window related stuff
@@ -208,7 +213,7 @@ func _apply_state() -> void:
 			
 	# Active project
 	var active_project_path: String = StatePersistence.get_value(StatePersistence.ACTIVE_PROJECT, "")
-	var active_project := ProjectManager.get_open_project_by_filepath(active_project_path)
+	var active_project : Project = ProjectManager.get_open_project_by_filepath(active_project_path)
 	if active_project != null:
 		_make_project_active(active_project)
 
@@ -241,7 +246,7 @@ func _make_project_active(project: Project) -> void:
 
 # -------------------------------------------------------------------------------------------------
 func _is_mouse_on_ui() -> bool:
-	var on_ui := Utils.is_mouse_in_control(_menubar)
+	var on_ui : bool = Utils.is_mouse_in_control(_menubar)
 	on_ui = on_ui || Utils.is_mouse_in_control(_toolbar)
 	on_ui = on_ui || Utils.is_mouse_in_control(_statusbar)
 	on_ui = on_ui || Utils.is_mouse_in_control(_file_dialog)

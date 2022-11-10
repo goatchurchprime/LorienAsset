@@ -1,5 +1,7 @@
 extends WindowDialog
 
+onready var Settings = LorAL.Settings
+
 # -------------------------------------------------------------------------------------------------
 const THEME_DARK_INDEX 	:= 0
 const THEME_LIGHT_INDEX := 1

@@ -1,6 +1,8 @@
 extends Node2D
 class_name BrushStroke
 
+onready var Settings = LorAL.Settings
+
 # ------------------------------------------------------------------------------------------------
 const COLLIDER_NODE_NAME := "StrokeCollider"
 
@@ -35,7 +37,7 @@ func _ready():
 		Types.AAMode.OPENGL_HINT:
 			_line2d.antialiased = true
 		Types.AAMode.TEXTURE_FILL:
-			_line2d.texture = BrushStrokeTexture.texture
+			_line2d.texture = LorAL.BrushStrokeTexture.texture
 			_line2d.texture_mode = Line2D.LINE_TEXTURE_STRETCH
 	
 	var rounding_mode: int = Settings.get_value(Settings.RENDERING_BRUSH_ROUNDING, Config.DEFAULT_BRUSH_ROUNDING)
@@ -150,7 +152,7 @@ func refresh() -> void:
 	_line2d.width_curve.bake()
 	top_left_pos = top_left
 	bottom_right_pos = bottom_right
-	_visibility_notifier.rect = Utils.calculate_rect(top_left, bottom_right)
+	_visibility_notifier.rect = LorAL.Utils.calculate_rect(top_left, bottom_right)
 
 # -------------------------------------------------------------------------------------------------
 func set_color(c: Color) -> void:

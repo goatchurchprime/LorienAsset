@@ -1,5 +1,8 @@
 extends Node
 
+onready var Settings = LorAL.Settings
+onready var Utils = LorAL.Utils
+
 # -------------------------------------------------------------------------------------------------
 const KEYBINDINGS_LINE_SCENE = preload("res://UI/Components/KeyBindingsLine.tscn")
 

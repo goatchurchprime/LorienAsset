@@ -1,6 +1,9 @@
 extends ViewportContainer
 class_name InfiniteCanvas
 
+onready var Settings = LorAL.Settings
+onready var ProjectMetadata = LorAL.ProjectMetadata
+
 # -------------------------------------------------------------------------------------------------
 const BRUSH_STROKE = preload("res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.tscn")
 const PLAYER = preload("res://addons/LorienInfiniteCanvas/Player/Player.tscn")

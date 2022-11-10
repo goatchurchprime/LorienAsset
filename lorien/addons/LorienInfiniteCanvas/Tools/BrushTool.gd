@@ -1,6 +1,8 @@
 class_name BrushTool
 extends CanvasTool
 
+onready var Settings = LorAL.Settings
+
 # -------------------------------------------------------------------------------------------------
 const MOVEMENT_THRESHOLD := 1.0
 const MIN_PRESSURE := 0.1

@@ -1,5 +1,6 @@
 extends WindowDialog
 
+onready var Utils = LorAL.Utils
 # -------------------------------------------------------------------------------------------------
 const _MODIFIER_KEYS := [KEY_SUPER_L, KEY_SUPER_R, KEY_CONTROL, KEY_SHIFT, KEY_META, KEY_ALT]
 

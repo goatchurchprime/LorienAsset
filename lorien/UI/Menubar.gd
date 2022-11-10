@@ -42,7 +42,7 @@ func remove_tab(project: Project) -> void:
 # ------------------------------------------------------------------------------------------------
 func remove_all_tabs() -> void:
 	for project_id in _tabs_map.keys():
-		var project: Project = ProjectManager.get_project_by_id(project_id)
+		var project: Project = LorAL.ProjectManager.get_project_by_id(project_id)
 		remove_tab(project)
 	_tabs_map.clear()
 	_active_file_tab = null

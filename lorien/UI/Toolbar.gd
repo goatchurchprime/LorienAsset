@@ -1,6 +1,9 @@
 extends ScrollContainer
 class_name Toolbar
 
+onready var Settings = LorAL.Settings
+onready var Utils = LorAL.Utils
+
 signal new_project
 signal open_project(filepath)
 signal save_project

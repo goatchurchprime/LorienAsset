@@ -1,6 +1,8 @@
 class_name SelectionTool
 extends CanvasTool
 
+onready var Utils : Node = LorAL.Utils
+
 # -------------------------------------------------------------------------------------------------
 const BRUSH_STROKE = preload("res://addons/LorienInfiniteCanvas/BrushStroke/BrushStroke.tscn")
 
@@ -36,9 +38,9 @@ func _ready():
 
 # ------------------------------------------------------------------------------------------------
 func tool_event(event: InputEvent) -> void:
-	var duplicate_pressed := Utils.event_pressed_bug_workaround("duplicate_strokes", event)
-	var copy_pressed := Utils.event_pressed_bug_workaround("copy_strokes", event)
-	var paste_pressed := Utils.event_pressed_bug_workaround("paste_strokes", event)
+	var duplicate_pressed : bool = Utils.event_pressed_bug_workaround("duplicate_strokes", event)
+	var copy_pressed : bool = Utils.event_pressed_bug_workaround("copy_strokes", event)
+	var paste_pressed : bool = Utils.event_pressed_bug_workaround("paste_strokes", event)
 	
 	if copy_pressed || duplicate_pressed:
 		var strokes := get_selected_strokes()
@@ -188,7 +190,7 @@ func _set_stroke_selected(stroke: BrushStroke) -> void:
 			
 # ------------------------------------------------------------------------------------------------
 func _add_undoredo_action_for_moved_strokes() -> void:
-	var project: Project = ProjectManager.get_active_project()
+	var project: Project = LorAL.ProjectManager.get_active_project()
 	project.undo_redo.create_action("Move Strokes")
 	for stroke in _stroke_positions_before_move.keys():
 		project.undo_redo.add_do_property(stroke, "global_position", stroke.global_position)
