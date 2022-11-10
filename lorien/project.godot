@@ -39,7 +39,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/CanvasTool.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "CircleTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/CircleTool.gd"
@@ -89,7 +89,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/InfiniteCanvasGrid.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "LineTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/LineTool.gd"
@@ -134,7 +134,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://UI/Components/ProjectTab.gd"
 }, {
-"base": "Reference",
+"base": "CanvasTool",
 "class": "RectangleTool",
 "language": "GDScript",
 "path": "res://addons/LorienInfiniteCanvas/Tools/RectangleTool.gd"

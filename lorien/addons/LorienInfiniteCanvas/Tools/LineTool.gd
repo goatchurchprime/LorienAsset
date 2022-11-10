@@ -3,6 +3,7 @@ extends CanvasTool
 
 # -------------------------------------------------------------------------------------------------
 const SNAP_STEP := deg2rad(90.0 / 6.0) # = 15 deg
+const PRESSURE := 0.9
 
 # -------------------------------------------------------------------------------------------------
 export var pressure_curve: Curve
@@ -25,20 +26,20 @@ func tool_event(event: InputEvent) -> void:
 			_cursor.set_pressure(event.pressure)
 			remove_last_stroke_point()
 			if _snapping_enabled:
-				_tail = _add_point_at_snap_pos(0.5)
+				_tail = _add_point_at_snap_pos(PRESSURE)
 			else:
-				_tail = _add_point_at_mouse_pos(0.5)
+				_tail = _add_point_at_mouse_pos(PRESSURE)
 	
 	# Start + End
 	elif event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT:
 			if event.pressed:
 				start_stroke()
-				_head = _add_point_at_mouse_pos(0.5)
-				_tail = _add_point_at_mouse_pos(0.5)
+				_head = _add_point_at_mouse_pos(PRESSURE)
+				_tail = _add_point_at_mouse_pos(PRESSURE)
 			elif !event.pressed && performing_stroke:
 				remove_last_stroke_point()
-				add_subdivided_line(_head, _tail, pressure_curve.interpolate(0.5))
+				add_subdivided_line(_head, _tail, pressure_curve.interpolate(PRESSURE))
 				end_stroke()
 
 # -------------------------------------------------------------------------------------------------

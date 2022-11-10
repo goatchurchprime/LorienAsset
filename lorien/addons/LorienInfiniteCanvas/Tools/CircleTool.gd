@@ -2,7 +2,7 @@ class_name CircleTool
 extends CanvasTool
 
 # -------------------------------------------------------------------------------------------------
-const PRESSURE := 0.5
+const PRESSURE := 0.75
 const STEP_IN_MOTION := 15
 const STEP_STATIC := 4
 
